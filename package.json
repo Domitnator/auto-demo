@@ -2,16 +2,16 @@
   "name": "auto-demo",
   "version": "0.3.0",
   "description": "Demo of https://intuit.github.io/auto/index",
-  "repository": "git@github.com:poloagustin/auto-demo.git",
-  "author": "apolo <agustin.polo@cloudx.com>",
+  "repository": "git@github.com:domitnator/auto-demo.git",
+  "author": "alfred <alfred@domitnator.nl>",
   "license": "MIT",
   "private": true,
   "devDependencies": {
-    "@auto-it/conventional-commits": "^10.31.0",
-    "@auto-it/git-tag": "^10.31.0",
+    "@auto-it/conventional-commits": "^10.37.1",
+    "@auto-it/git-tag": "^10.37.1",
     "@auto-it/jira": "^10.31.0",
-    "@auto-it/npm": "^10.31.0",
-    "auto": "^10.31.0",
+    "@auto-it/npm": "^10.37.1",
+    "auto": "^10.37.1",
     "lerna": "^4.0.0"
   },
   "workspaces": [
@@ -19,6 +19,8 @@
     ".github/actions/*"
   ],
   "scripts": {
-    "release": "auto shipit"
+    "release": "auto shipit",
+    "releaseDry": "auto shipit -d",
+    "autoCreateLabels": "auto create-labels"
   }
 }
